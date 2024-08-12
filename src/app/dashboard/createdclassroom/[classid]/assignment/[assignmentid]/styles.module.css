@@ -1,0 +1,46 @@
+.parent {
+  align-items: start;
+}
+
+.gridone {
+  position: sticky;
+  top: 6rem;
+}
+
+@media screen and (max-width: 400px) {
+  .cls {
+    max-width: 90vw;
+    overflow: scroll;
+  }
+  .pdfwidth {
+    min-width: 400px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .gridone {
+    position: static;
+  }
+
+  .email {
+    display: none;
+  }
+
+  .cls {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .stdname {
+    padding: 1rem;
+  }
+
+  .avt {
+    display: none;
+  }
+
+  .names {
+    margin-left: 0px;
+  }
+}
